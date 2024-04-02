@@ -137,12 +137,4 @@ private class ArticlePreviewProvider : PreviewParameterProvider<ArticleUI> {
     )
 }
 
-private class ArticlesPreviewProvider : PreviewParameterProvider<List<ArticleUI>> {
 
-    private val articleProvider = ArticlePreviewProvider()
-
-    override val values = sequenceOf(
-        articleProvider.values
-            .toList()
-    )
-}
